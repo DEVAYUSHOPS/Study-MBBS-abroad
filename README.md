@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Study MBBS Abroad - Responsive Landing Page
 
-## Getting Started
+## 📌 Project Overview
+This project is a responsive landing page for "Study MBBS Abroad," built using **Next.js, Tailwind CSS, and TypeScript**. It features country listings, program details, and a lead generation form with validation and API integration.
 
-First, run the development server:
+## 🚀 Features
+- **Fully Responsive Design** using Tailwind CSS
+- **Lead Generation Form** with validation
+- **Server-side API** for form submission
+- **SEO Optimization**
+- **Google Analytics & Facebook Pixel Integration**
+- **Fast Loading and Performance Optimization**
 
+---
+## 🛠️ Tech Stack
+- **Next.js** (Framework for React)
+- **TypeScript** (Strongly-typed JavaScript)
+- **Tailwind CSS** (For styling)
+- **React Hook Form** & **Yup** (For form validation)
+
+---
+## 🏗️ Setup & Installation
+### 1️⃣ Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/mbbs-landing.git
+cd mbbs-landing
 ```
+### 2️⃣ Install Dependencies
+```bash
+npm install   # or yarn install
+```
+### 3️⃣ Run the Development Server
+```bash
+npm run dev   # or yarn dev
+```
+🚀 Open [http://localhost:3000](http://localhost:3000) to view the project.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
+## 📤 API Endpoint
+### Form Submission (`/api/submit`)
+- **Method:** `POST`
+- **Body Parameters:**
+  ```json
+  {
+    "name": "ayush",
+    "email": "ayush@example.com",
+    "phone": "1234567890",
+    "country": "Russia"
+  }
+  ```
+- **Response:**
+  ```json
+  {
+    "message": "Form submitted successfully"
+  }
+  ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
+## 🔍 SEO & Analytics Integration
+1. **Google Analytics:** Add your tracking ID in `pages/_app.tsx`.
+2. **Facebook Pixel:** Place the tracking script in `_app.tsx`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
+## ✅ Deployment
+### Deploy on Vercel (Recommended)
+```bash
+npm install -g vercel
+vercel
+```
+🔗 After deployment, get your live URL and share it!
 
-## Learn More
+---
+## 📞 Contact
+For any queries, reach out via [ayush.tesla@gmail.com](mailto:ayush.tesla@gmail.com)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
