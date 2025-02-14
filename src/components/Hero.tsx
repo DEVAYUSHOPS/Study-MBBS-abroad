@@ -1,5 +1,4 @@
 import Image from "next/image";
-import "../pages/globals.css"
 
 const Hero = () => {
     return (

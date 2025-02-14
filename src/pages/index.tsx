@@ -4,7 +4,7 @@ import Benefits from "@/components/Benefits";
 import Countries from "@/components/Countries";
 import Process from "@/components/Process";
 import LeadForm from "@/components/LeadForm";
-import "./globals.css";
+// import "./globals.css";
 
 export default function Home() {
   return (
